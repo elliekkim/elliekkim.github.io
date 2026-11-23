@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 16" fill="none"
+     stroke="#cbcbcb" stroke-width="0.85" stroke-linecap="round">
+  <defs>
+    <g id="scroll">
+      <path d="M1 8 Q7 4 13 8 Q7 12 1 8Z M13 8 H218
+               C228 8 231 4 240 4 C253 4 261 13 282 13
+               C306 13 327 2.5 347 2.5 C355 2.5 360 5 360 8
+               C360 12 351 12 351 8.5 C351 7 354 6.5 355 8"
+            vector-effect="non-scaling-stroke"/>
+      <path d="M360 8 C357 13 347 14 334 11 C317 7 303 2.5 289 4
+               C278 5 275 9 268 9 C262 9 261 5 265 4.5"
+            vector-effect="non-scaling-stroke"/>
+    </g>
+  </defs>
+  <use href="#scroll"/>
+  <use href="#scroll" transform="translate(720 0) scale(-1 1)"/>
+</svg>
