@@ -106,7 +106,7 @@ a:focus {
   max-width: 58rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 2.85fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.65fr);
   grid-template-areas: "portrait greeting" "portrait bio";
   gap: 1.3rem clamp(1.75rem, 4.5vw, 4rem);
   align-items: start;
@@ -193,7 +193,7 @@ a:focus {
     padding-block: 2rem;
   }
   .hero {
-    grid-template-columns: clamp(4.75rem, 21.25vw, 6.875rem) 1fr;
+    grid-template-columns: clamp(5rem, 22.5vw, 7.25rem) 1fr;
     grid-template-areas: "portrait greeting" "bio bio";
     gap: 1.6rem 1.25rem;
     align-items: center;
