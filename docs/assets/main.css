@@ -106,7 +106,7 @@ a:focus {
   max-width: 58rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 2.55fr);
+  grid-template-columns: minmax(15rem, 1.1fr) minmax(0, 2.55fr);
   grid-template-areas: "portrait greeting" "portrait bio";
   gap: 1.3rem clamp(1.75rem, 4.5vw, 4rem);
   align-items: start;
@@ -188,15 +188,19 @@ a:focus {
   border: 0;
 }
 
+@media (max-width: 48rem) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "portrait" "greeting" "bio";
+  }
+  .hero-image {
+    width: min(100%, 15rem);
+    justify-self: center;
+  }
+}
 @media (max-width: 35rem) {
   .page-content {
     padding-block: 2rem;
-  }
-  .hero {
-    grid-template-columns: clamp(5.5rem, 24.75vw, 7.975rem) 1fr;
-    grid-template-areas: "portrait greeting" "bio bio";
-    gap: 1.6rem 1.25rem;
-    align-items: center;
   }
   .nav-inner {
     grid-template-columns: 1fr;
