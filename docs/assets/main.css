@@ -104,7 +104,7 @@ a:focus {
 
 .hero {
   max-width: 58rem;
-  margin: 0 auto;
+  margin: clamp(1.5rem, 4vw, 3rem) auto 0;
   display: grid;
   grid-template-columns: minmax(15rem, 1.1fr) minmax(0, 2.55fr);
   grid-template-areas: "portrait greeting" "portrait bio";
