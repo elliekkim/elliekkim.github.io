@@ -5,12 +5,12 @@
 
   function rest() {
     clearTimeout(idleTimer);
-    root.classList.remove("hand-moving");
+    root.classList.remove("cursor-moving");
   }
 
   document.addEventListener("pointermove", (event) => {
     if (event.pointerType !== "mouse" || !motion.matches) return;
-    root.classList.add("hand-moving");
+    root.classList.add("cursor-moving");
     clearTimeout(idleTimer);
     idleTimer = setTimeout(rest, 140);
   }, { passive: true });
