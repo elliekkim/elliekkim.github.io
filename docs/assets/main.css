@@ -61,7 +61,7 @@ a:focus {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 0.4rem 1rem;
+  gap: 0.4rem 1.5rem;
   margin: 0;
   padding: 0;
   font-size: 1.0625rem;
@@ -81,7 +81,23 @@ a:focus {
 }
 
 .global-nav nav a {
+  position: relative;
   color: #757575;
+}
+.global-nav nav a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 0.2em);
+  width: 1.05em;
+  height: 1.2em;
+  transform: translateY(-50%);
+  background: url("images/nav-ghost.svg") center/contain no-repeat;
+  visibility: hidden;
+  pointer-events: none;
+}
+.global-nav nav a:hover::after, .global-nav nav a:focus-visible::after {
+  visibility: visible;
 }
 .global-nav nav a[aria-current=page], .global-nav nav a:hover, .global-nav nav a:focus-visible {
   color: #201e1c;
